@@ -66,17 +66,23 @@ const Products = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="product-mockup">
-              <div className="mockup-screen">
-                <div className="mockup-header">
-                  <div className="mockup-dot"></div>
-                  <div className="mockup-dot"></div>
-                  <div className="mockup-dot"></div>
+            <div className="browser-frame">
+              <div className="browser-header">
+                <div className="browser-dots">
+                  <span className="dot dot-red"></span>
+                  <span className="dot dot-yellow"></span>
+                  <span className="dot dot-green"></span>
                 </div>
-                <div className="mockup-content">
-                  <div className="mockup-logo">Badgi.net</div>
-                  <p>Event Management Platform</p>
+                <div className="browser-url">
+                  <span>badgi.net</span>
                 </div>
+              </div>
+              <div className="product-screenshot">
+                <img 
+                  src="/badgi-screenshot.png" 
+                  alt="Badgi.net Platform Screenshot" 
+                  className="screenshot-img"
+                />
               </div>
             </div>
           </motion.div>
