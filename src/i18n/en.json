@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transform your ideas into",
+    "titleHighlight": "Digital Solutions",
+    "subtitle": "BARAKODE - Your partner in web development, mobile applications, UX/UI design and artificial intelligence",
+    "cta": "Start a project",
+    "ctaSecondary": "Our services"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Tailored solutions for all your digital needs",
+    "web": {
+      "title": "Web Development",
+      "description": "Modern, high-performance and responsive websites. From showcase to e-commerce to complex web applications."
+    },
+    "mobile": {
+      "title": "Mobile Applications",
+      "description": "Native iOS and Android applications. Optimal user experience on all devices."
+    },
+    "design": {
+      "title": "UX/UI Design",
+      "description": "Intuitive and aesthetic interfaces. User-centered design for a memorable experience."
+    },
+    "ai": {
+      "title": "Artificial Intelligence",
+      "description": "Innovative AI solutions. Machine learning, natural language processing and intelligent automation."
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover our innovative solutions",
+    "badgi": {
+      "title": "Badgi.net",
+      "description": "Leading platform for event management and community development. Create, manage and promote your events easily.",
+      "features": {
+        "management": "Complete event management",
+        "community": "Community development",
+        "promotion": "Integrated promotion tools",
+        "analytics": "Analytics and statistics"
+      },
+      "cta": "Discover Badgi.net"
+    }
+  },
+  "process": {
+    "title": "Our Method",
+    "subtitle": "A proven process to ensure your success",
+    "steps": {
+      "analysis": {
+        "title": "Analysis & Planning",
+        "description": "We analyze your needs and define the best strategy together."
+      },
+      "design": {
+        "title": "Design & Prototyping",
+        "description": "Creating mockups and prototypes to validate the user experience."
+      },
+      "development": {
+        "title": "Development",
+        "description": "Agile development with regular checkpoints to track progress."
+      },
+      "testing": {
+        "title": "Testing & Validation",
+        "description": "Rigorous testing to ensure quality, performance and security."
+      },
+      "deployment": {
+        "title": "Deployment",
+        "description": "Secure production deployment and launch support."
+      },
+      "support": {
+        "title": "Maintenance & Support",
+        "description": "Ongoing support and updates to accompany your growth."
+      }
+    }
+  },
+  "about": {
+    "title": "About BARAKODE",
+    "subtitle": "Your trusted technology partner",
+    "description": "BARAKODE SARL is a software development company based in Sousse, Tunisia. Since 2025, we have been supporting our clients in their digital transformation with innovative and customized solutions.",
+    "stats": {
+      "founded": "Founded in 2025",
+      "location": "Sousse, Tunisia",
+      "expertise": "4 Areas of expertise",
+      "commitment": "100% Customer satisfaction"
+    },
+    "address": "20 MARS IM AOUN 4000 Sousse Ville Sousse"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's discuss your project",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "An error occurred. Please try again."
+    },
+    "info": {
+      "address": "Address",
+      "email": "Email",
+      "phone": "Phone"
+    }
+  },
+  "footer": {
+    "description": "Innovative digital solutions - Web, Mobile, UX/UI and AI Development",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "copyright": "© 2025 BARAKODE SARL. All rights reserved.",
+    "madeWith": "Made with",
+    "in": "in Tunisia"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "viewMore": "View more",
+    "close": "Close",
+    "loading": "Loading..."
+  }
+}
