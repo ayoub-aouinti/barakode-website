@@ -73,7 +73,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4>{t('contact.info.email')}</h4>
-                <p>contact@barakode.tn</p>
+                <p>admin@barakode.org</p>
               </div>
             </div>
 
