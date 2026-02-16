@@ -4,6 +4,7 @@ import './Footer.css';
 
 const Footer = () => {
   const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -68,7 +69,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            {t('footer.copyright')}
+            © {currentYear} BARAKODE SARL. {t('footer.copyright').replace('© 2025 BARAKODE SARL. ', '')}
           </p>
           <p>
             {t('footer.madeWith')} <FaHeart className="heart" /> {t('footer.in')}
