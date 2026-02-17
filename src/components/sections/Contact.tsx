@@ -26,13 +26,38 @@ const Contact = () => {
     e.preventDefault();
     setStatus('sending');
 
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setStatus('success');
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      setTimeout(() => setStatus('idle'), 3000);
-    }, 1500);
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/admin@barakode.org", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `Contact BARAKODE: ${formData.subject}`, // Custom subject for email
+          _template: 'table', // Nice layout
+          _captcha: 'false' // Disable captcha for simple UX (can be enabled later)
+        })
+      });
+
+      if (response.ok) {
+        console.log('Email sent successfully via FormSubmit');
+        setStatus('success');
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        throw new Error('FormSubmit error');
+      }
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
   };
 
   return (
@@ -96,6 +121,9 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
+            {/* Hidden honeypot field to prevent spam */}
+            <input type="text" name="_honey" style={{ display: 'none' }} />
+
             <div className="form-row">
               <div className="form-group">
                 <input
@@ -173,6 +201,10 @@ const Contact = () => {
             {status === 'error' && (
               <div className="form-message error">{t('contact.form.error')}</div>
             )}
+            
+            <p className="form-note" style={{ fontSize: '0.8rem', color: 'var(--gray-500)', marginTop: '1rem', textAlign: 'center' }}>
+              Powered by FormSubmit
+            </p>
           </motion.form>
         </div>
       </div>
