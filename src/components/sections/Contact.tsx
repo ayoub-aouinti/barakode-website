@@ -108,7 +108,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4>{t('contact.info.phone')}</h4>
-                <p>+216 XX XXX XXX</p>
+                <p>+216 29 173 135</p>
               </div>
             </div>
           </motion.div>
