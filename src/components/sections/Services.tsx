@@ -11,25 +11,25 @@ const Services = () => {
       icon: <FaCode />,
       title: t('services.web.title'),
       description: t('services.web.description'),
-      color: '#00D4FF'
+      color: '#00A3FF'
     },
     {
       icon: <FaMobileAlt />,
       title: t('services.mobile.title'),
       description: t('services.mobile.description'),
-      color: '#00FF88'
+      color: '#00E5FF'
     },
     {
       icon: <FaPalette />,
       title: t('services.design.title'),
       description: t('services.design.description'),
-      color: '#FF6B9D'
+      color: '#00D1FF'
     },
     {
       icon: <FaBrain />,
       title: t('services.ai.title'),
       description: t('services.ai.description'),
-      color: '#FFB800'
+      color: '#00FFB2'
     }
   ];
 

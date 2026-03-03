@@ -44,7 +44,7 @@
   margin-bottom: var(--space-6);
   display: inline-block;
   padding: var(--space-6);
-  background: rgba(0, 212, 255, 0.1);
+  background: rgba(0, 163, 255, 0.1);
   border-radius: var(--radius-xl);
   transition: all var(--transition-base);
 }

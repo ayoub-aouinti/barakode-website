@@ -3,18 +3,18 @@
 /* CSS Variables */
 :root {
   /* Colors - Based on BARAKODE logo */
-  --primary: #00D4FF;
-  --primary-dark: #00A8CC;
-  --primary-light: #33DDFF;
-  --secondary: #0A1628;
-  --secondary-light: #1A2638;
-  --accent: #00FF88;
-  --accent-dark: #00CC6A;
+  --primary: #00A3FF;
+  --primary-dark: #0082CC;
+  --primary-light: #52C2FF;
+  --secondary: #000000;
+  --secondary-light: #1A1A1A;
+  --accent: #00E5FF;
+  --accent-dark: #00B2CC;
   
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #00D4FF 0%, #00FF88 100%);
-  --gradient-dark: linear-gradient(135deg, #0A1628 0%, #1A2638 100%);
-  --gradient-hero: linear-gradient(135deg, #0A1628 0%, #1A2638 50%, #0A1628 100%);
+  --gradient-primary: linear-gradient(135deg, #00A3FF 0%, #00E5FF 100%);
+  --gradient-dark: linear-gradient(135deg, #000000 0%, #0A1628 100%);
+  --gradient-hero: linear-gradient(135deg, #000000 0%, #1A1A1A 50%, #000000 100%);
   
   /* Neutral Colors */
   --white: #FFFFFF;
@@ -76,8 +76,8 @@
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.3);
-  --shadow-glow-accent: 0 0 20px rgba(0, 255, 136, 0.3);
+  --shadow-glow: 0 0 20px rgba(0, 163, 255, 0.4);
+  --shadow-glow-accent: 0 0 20px rgba(0, 229, 255, 0.4);
   
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
