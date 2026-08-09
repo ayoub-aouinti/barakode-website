@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaHeart } from 'react-icons/fa';
+import {  FaTwitter, FaLinkedin, FaHeart } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -24,18 +24,18 @@ const Footer = () => {
             </div>
             <p className="footer-description">{t('footer.description')}</p>
             <div className="social-links">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <FaFacebook />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              </a> */}
+              <a href="https://x.com/BarakodeSarl" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <FaTwitter />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/barakode-sarl" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram />
-              </a>
+              </a> */}
             </div>
           </div>
 
