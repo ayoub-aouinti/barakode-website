@@ -4,6 +4,8 @@ import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
 import Services from './components/sections/Services';
 import Products from './components/sections/Products';
+import References from './components/sections/References';
+import Process from './components/sections/Process';
 import About from './components/sections/About';
 import Contact from './components/sections/Contact';
 
@@ -15,6 +17,8 @@ function App() {
         <Hero />
         <Services />
         <Products />
+        <References />
+        <Process />
         <About />
         <Contact />
       </main>

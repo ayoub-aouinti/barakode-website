@@ -1,37 +1,23 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FaCode, FaMobileAlt, FaPalette, FaBrain } from 'react-icons/fa';
+import { FaCode, FaMobileAlt, FaPalette, FaBrain, FaCheck } from 'react-icons/fa';
 import './Services.css';
+
+const SERVICES = [
+  { key: 'web', icon: <FaCode /> },
+  { key: 'mobile', icon: <FaMobileAlt /> },
+  { key: 'design', icon: <FaPalette /> },
+  { key: 'ai', icon: <FaBrain /> },
+];
 
 const Services = () => {
   const { t } = useTranslation();
 
-  const services = [
-    {
-      icon: <FaCode />,
-      title: t('services.web.title'),
-      description: t('services.web.description'),
-      color: '#00A3FF'
-    },
-    {
-      icon: <FaMobileAlt />,
-      title: t('services.mobile.title'),
-      description: t('services.mobile.description'),
-      color: '#00E5FF'
-    },
-    {
-      icon: <FaPalette />,
-      title: t('services.design.title'),
-      description: t('services.design.description'),
-      color: '#00D1FF'
-    },
-    {
-      icon: <FaBrain />,
-      title: t('services.ai.title'),
-      description: t('services.ai.description'),
-      color: '#00FFB2'
-    }
-  ];
+  const spotlight = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    e.currentTarget.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+    e.currentTarget.style.setProperty('--my', `${e.clientY - rect.top}px`);
+  };
 
   return (
     <section id="services" className="section services">
@@ -43,26 +29,34 @@ const Services = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
+          <span className="section-eyebrow">{t('nav.services')}</span>
           <h2>{t('services.title')}</h2>
           <p>{t('services.subtitle')}</p>
         </motion.div>
 
         <div className="services-grid">
-          {services.map((service, index) => (
+          {SERVICES.map((service, index) => (
             <motion.div
-              key={index}
+              key={service.key}
               className="service-card"
+              onMouseMove={spotlight}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8 }}
             >
-              <div className="service-icon" style={{ color: service.color }}>
-                {service.icon}
-              </div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <div className="service-icon">{service.icon}</div>
+              <h3>{t(`services.${service.key}.title`)}</h3>
+              <p>{t(`services.${service.key}.description`)}</p>
+              <ul className="service-points">
+                {(t(`services.${service.key}.points`, { returnObjects: true }) as string[]).map((point) => (
+                  <li key={point}>
+                    <FaCheck />
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>

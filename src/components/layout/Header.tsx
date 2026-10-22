@@ -3,21 +3,34 @@ import { useTranslation } from 'react-i18next';
 import { FaBars, FaTimes, FaGlobe } from 'react-icons/fa';
 import './Header.css';
 
+const SECTIONS = ['hero', 'services', 'products', 'references', 'about', 'contact'];
+
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [active, setActive] = useState('hero');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(max > 0 ? (window.scrollY / max) * 100 : 0);
+      const current = SECTIONS.filter((id) => {
+        const el = document.getElementById(id);
+        return el && el.getBoundingClientRect().top <= 120;
+      }).pop();
+      if (current) setActive(current);
     };
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
     document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = i18n.language;
   }, [i18n.language]);
 
   const scrollToSection = (id: string) => {
@@ -34,6 +47,7 @@ const Header = () => {
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="scroll-progress" style={{ width: `${progress}%` }}></div>
       <div className="container">
         <div className="header-content">
           <div className="logo" onClick={() => scrollToSection('hero')}>
@@ -42,18 +56,22 @@ const Header = () => {
           </div>
 
           <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
-            <a onClick={() => scrollToSection('hero')}>{t('nav.home')}</a>
-            <a onClick={() => scrollToSection('services')}>{t('nav.services')}</a>
-            <a onClick={() => scrollToSection('products')}>{t('nav.products')}</a>
-            <a onClick={() => scrollToSection('about')}>{t('nav.about')}</a>
-            <a onClick={() => scrollToSection('contact')}>{t('nav.contact')}</a>
+            {SECTIONS.map((id) => (
+              <a
+                key={id}
+                className={active === id ? 'active' : ''}
+                onClick={() => scrollToSection(id)}
+              >
+                {t(id === 'hero' ? 'nav.home' : `nav.${id}`)}
+              </a>
+            ))}
           </nav>
 
           <div className="header-actions">
             <div className="language-selector">
               <FaGlobe />
-              <select 
-                value={i18n.language} 
+              <select
+                value={i18n.language}
                 onChange={(e) => changeLanguage(e.target.value)}
               >
                 <option value="fr">FR</option>
@@ -62,7 +80,7 @@ const Header = () => {
               </select>
             </div>
 
-            <button 
+            <button
               className="mobile-menu-toggle"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"

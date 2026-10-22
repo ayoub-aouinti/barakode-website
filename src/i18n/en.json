@@ -2,97 +2,120 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "products": "Products",
+    "products": "Projects",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "references": "References",
+    "process": "Method"
   },
   "hero": {
-    "title": "Transform your ideas into",
+    "title": "Turn your ideas into",
     "titleHighlight": "Digital Solutions",
-    "subtitle": "BARAKODE - Your partner in web development, mobile applications, UX/UI design and artificial intelligence",
+    "subtitle": "BARAKODE — your partner for web development, mobile apps, UX/UI design and artificial intelligence.",
     "cta": "Start a project",
-    "ctaSecondary": "Our services"
+    "ctaSecondary": "See our projects",
+    "badge": "Software development company · Sousse, Tunisia",
+    "demo": "PharmaSync demo",
+    "pills": [
+      "Web Development",
+      "Mobile iOS / Android",
+      "UX / UI Design",
+      "Artificial Intelligence"
+    ],
+    "platforms": "Our platforms in production"
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Tailored solutions for all your digital needs",
+    "subtitle": "Tailor-made solutions for all your digital needs",
     "web": {
       "title": "Web Development",
-      "description": "Modern, high-performance and responsive websites. From showcase to e-commerce to complex web applications."
+      "description": "Modern, fast and responsive websites. From e-commerce storefronts to complex web applications.",
+      "points": [
+        "Showcase sites & e-commerce",
+        "Business apps and client portals",
+        "Dashboards and admin spaces",
+        "Redesign, performance and technical SEO"
+      ]
     },
     "mobile": {
-      "title": "Mobile Applications",
-      "description": "Native iOS and Android applications. Optimal user experience on all devices."
+      "title": "Mobile Apps",
+      "description": "Native iOS and Android applications. Optimal user experience on every device.",
+      "points": [
+        "Native and cross-platform apps",
+        "Offline mode and synchronization",
+        "Geolocation and field work",
+        "App Store & Google Play publishing"
+      ]
     },
     "design": {
       "title": "UX/UI Design",
-      "description": "Intuitive and aesthetic interfaces. User-centered design for a memorable experience."
+      "description": "Intuitive, beautiful interfaces. User-centered design for a memorable experience.",
+      "points": [
+        "Workshops and user journeys",
+        "Wireframes and interactive prototypes",
+        "Design system and component library",
+        "Visual identity and variations"
+      ]
     },
     "ai": {
       "title": "Artificial Intelligence",
-      "description": "Innovative AI solutions. Machine learning, natural language processing and intelligent automation."
-    }
-  },
-  "products": {
-    "title": "Our Products",
-    "subtitle": "Discover our innovative solutions",
-    "badgi": {
-      "title": "Badgi.net",
-      "description": "Leading platform for event management and community development. Create, manage and promote your events easily.",
-      "features": {
-        "management": "Complete event management",
-        "community": "Community development",
-        "promotion": "Integrated promotion tools",
-        "analytics": "Analytics and statistics"
-      },
-      "cta": "Discover Badgi.net"
-    }
-  },
-  "process": {
-    "title": "Our Method",
-    "subtitle": "A proven process to ensure your success",
-    "steps": {
-      "analysis": {
-        "title": "Analysis & Planning",
-        "description": "We analyze your needs and define the best strategy together."
-      },
-      "design": {
-        "title": "Design & Prototyping",
-        "description": "Creating mockups and prototypes to validate the user experience."
-      },
-      "development": {
-        "title": "Development",
-        "description": "Agile development with regular checkpoints to track progress."
-      },
-      "testing": {
-        "title": "Testing & Validation",
-        "description": "Rigorous testing to ensure quality, performance and security."
-      },
-      "deployment": {
-        "title": "Deployment",
-        "description": "Secure production deployment and launch support."
-      },
-      "support": {
-        "title": "Maintenance & Support",
-        "description": "Ongoing support and updates to accompany your growth."
-      }
+      "description": "Innovative AI solutions. Machine learning, natural language processing and intelligent automation.",
+      "points": [
+        "Automation of repetitive tasks",
+        "Document processing and data extraction",
+        "Predictive analytics and decision support",
+        "Business conversational assistants"
+      ]
     }
   },
   "about": {
     "title": "About BARAKODE",
     "subtitle": "Your trusted technology partner",
-    "description": "BARAKODE SARL is a software development company based in Sousse, Tunisia. Since 2025, we have been supporting our clients in their digital transformation with innovative and customized solutions.",
+    "description": "BARAKODE SARL is a software development company based in Sousse, Tunisia. Since 2025, we have supported our clients in their digital transformation with innovative, tailor-made solutions. What sets us apart: we don't just deliver projects, we also publish our own platforms — already in production.",
     "stats": {
       "founded": "Founded in 2025",
       "location": "Sousse, Tunisia",
       "expertise": "4 Areas of expertise",
       "commitment": "100% Customer satisfaction"
     },
-    "address": "20 MARS IM AOUN 4000 Sousse Ville Sousse"
+    "address": "20 MARS IM AOUN 4000 Sousse Ville Sousse",
+    "values": [
+      {
+        "title": "Truly tailor-made",
+        "text": "Every project starts from your business, not a generic template. Scoping, mockups and validation before the first line of code."
+      },
+      {
+        "title": "A single point of contact",
+        "text": "A team based in Sousse, directly reachable, following your project from the first conversation through maintenance."
+      },
+      {
+        "title": "Proven products",
+        "text": "Our platforms already run in real conditions: what we build for you relies on tested building blocks."
+      }
+    ],
+    "whyTitle": "What you gain by working with us",
+    "why": [
+      {
+        "title": "Real proximity",
+        "text": "Based in Sousse, we travel, we answer fast and we speak your language."
+      },
+      {
+        "title": "Controlled budget",
+        "text": "A detailed quote validated before we start, with no hidden costs along the way."
+      },
+      {
+        "title": "You stay the owner",
+        "text": "Source code, data and hosting accounts belong to you."
+      },
+      {
+        "title": "After delivery",
+        "text": "Team training, guaranteed fixes and planned evolutions."
+      }
+    ]
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Let's discuss your project",
+    "subtitle": "A custom need, or a demo of PharmaSync, Badgi.net or Badgi-WorkFlow? Write to us, we reply quickly.",
     "form": {
       "name": "Full name",
       "email": "Email",
@@ -127,5 +150,194 @@
     "viewMore": "View more",
     "close": "Close",
     "loading": "Loading..."
+  },
+  "products": {
+    "title": "Our Projects & Products",
+    "subtitle": "Beyond custom projects, BARAKODE publishes its own platforms, already live and adaptable to your organization.",
+    "flagship": "Flagship product",
+    "visit": "Visit website",
+    "demo": "Try the online demo",
+    "mobileBadge": "+ Mobile app",
+    "pharmasync": {
+      "tagline": "CRM & mobile app for laboratories and pharmacies",
+      "description": "PharmaSync digitizes all the activity of medical representatives: visit planning, field reports, objective tracking and real-time sales management. Reps work from their phone, even offline; managers follow activity live from their dashboard.",
+      "mobileTitle": "A companion mobile app",
+      "mobileText": "The representative's app for iOS and Android: rounds, reports and geolocation, even offline.",
+      "groups": [
+        {
+          "title": "Management",
+          "items": [
+            "Activity overview",
+            "Objectives & KPIs",
+            "Visit analysis",
+            "Exportable performance reports"
+          ]
+        },
+        {
+          "title": "Field",
+          "items": [
+            "Doctors & facilities directory",
+            "Weekly schedule",
+            "Visit map and geolocation",
+            "Products, samples & requests",
+            "Time tracking and leave management"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "For the rep",
+          "text": "Their rounds, doctors and reports in a single mobile app."
+        },
+        {
+          "title": "For the manager",
+          "text": "Coverage, completed visits and reporting delays, in real time."
+        },
+        {
+          "title": "For management",
+          "text": "Reliable indicators: coverage rate, schedule compliance, report quality."
+        }
+      ]
+    },
+    "badgi": {
+      "tagline": "Event management & ticketing",
+      "description": "The leading platform for event management and community building. Badgi.net is already adopted by medical congresses in Tunisia — cardiology, pediatrics, neurology, pulmonology and many other specialties.",
+      "points": [
+        "Complete event creation and management",
+        "Online ticketing and registration",
+        "Event directory by specialty and date",
+        "Community building and engagement",
+        "Built-in promotion tools",
+        "Participation analytics and statistics"
+      ]
+    },
+    "workflow": {
+      "tagline": "Workflow tracking and management",
+      "description": "Centralize the tracking of your projects and processes: breakdown by status and priority, completion rate, team workload and urgency alerts. A clear view of progress for everyone involved.",
+      "points": [
+        "Real-time dashboard",
+        "Statuses: new, in progress, delivered, returned, done",
+        "High / medium / low priorities and late projects",
+        "Completion rate and urgency alerts",
+        "Workload and capacity per team",
+        "Secure Google or e-mail sign-in"
+      ]
+    }
+  },
+  "references": {
+    "title": "References",
+    "subtitle": "Platforms already in production with pharmaceutical laboratories and medical congress organizers.",
+    "stats": [
+      {
+        "value": "3",
+        "label": "Platforms in production"
+      },
+      {
+        "value": "iOS · Android",
+        "label": "PharmaSync mobile app"
+      },
+      {
+        "value": "Congresses",
+        "label": "Medical, in Tunisia via Badgi.net"
+      },
+      {
+        "value": "100%",
+        "label": "Client satisfaction"
+      }
+    ],
+    "sectorsTitle": "Sectors we serve",
+    "sectors": [
+      "Pharmaceutical laboratories & pharmacies",
+      "Medical congresses and events",
+      "SMEs, retail and services",
+      "Industry & organizations"
+    ],
+    "specialtiesTitle": "Medical congresses on Badgi.net",
+    "specialties": [
+      "Cardiology",
+      "Pediatrics",
+      "Neurology",
+      "Pulmonology",
+      "Pharmacology",
+      "And many other specialties"
+    ]
+  },
+  "process": {
+    "title": "Our Method",
+    "subtitle": "Four steps, zero surprises",
+    "deliverable": "Deliverable",
+    "steps": [
+      {
+        "title": "Listen & scope",
+        "description": "We analyze your need, define the scope and set a clear budget.",
+        "deliverable": "Specifications + detailed quote"
+      },
+      {
+        "title": "Design & prototype",
+        "description": "Mockups and user journeys validated together before the first line of code.",
+        "deliverable": "UX/UI mockups + clickable prototype"
+      },
+      {
+        "title": "Development & testing",
+        "description": "Regular deliveries you test along the way, with controlled quality.",
+        "deliverable": "Acceptance builds + test suites"
+      },
+      {
+        "title": "Deployment & support",
+        "description": "Go-live, team training and ongoing maintenance.",
+        "deliverable": "Live application + guide and support"
+      }
+    ]
+  },
+  "tech": {
+    "title": "A modern and durable technical foundation",
+    "subtitle": "Proven, documented and long-lasting technologies — so your solution stays maintainable over time, by us or by your own teams.",
+    "groups": [
+      {
+        "label": "Front-end",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "label": "Back-end",
+        "items": [
+          "Node.js",
+          "Python",
+          "REST API",
+          "PostgreSQL / MySQL"
+        ]
+      },
+      {
+        "label": "Mobile",
+        "items": [
+          "iOS",
+          "Android",
+          "React Native",
+          "Flutter"
+        ]
+      },
+      {
+        "label": "AI & data",
+        "items": [
+          "Machine learning",
+          "NLP",
+          "OCR & documents",
+          "Dashboards"
+        ]
+      },
+      {
+        "label": "Cloud & security",
+        "items": [
+          "Docker",
+          "CI / CD",
+          "Cloud hosting",
+          "Backups & GDPR"
+        ]
+      }
+    ]
   }
 }
