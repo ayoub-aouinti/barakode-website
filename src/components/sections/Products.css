@@ -256,3 +256,5 @@ a.browser-frame:hover {
 @media (max-width: 560px) {
   .product-groups { grid-template-columns: 1fr; }
 }
+
+.product-video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }

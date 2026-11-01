@@ -6,7 +6,8 @@
     "about": "About",
     "contact": "Contact",
     "references": "References",
-    "process": "Method"
+    "process": "Method",
+    "video": "Video"
   },
   "hero": {
     "title": "Turn your ideas into",
@@ -222,6 +223,20 @@
         "Workload and capacity per team",
         "Secure Google or e-mail sign-in"
       ]
+    },
+    "medvideo": {
+      "tagline": "Medical video & 3D presentation production",
+      "description": "BARAKODE designs interactive product videos and presentations for pharmaceutical laboratories: 3D animated pathology, mechanism of action, device and product range. A modern, educational medium for your reps, congresses and websites.",
+      "points": [
+        "Educational 3D animations of the condition (e.g. asthma, COPD)",
+        "Interactive presentation of the device and product range",
+        "Built-in clinical guidelines with cited references",
+        "Video deliverables (MP4) and interactive web version",
+        "Suited to congresses, medical visits and in-pharmacy screens"
+      ],
+      "watch": "Watch the video demo",
+      "demoLabel": "Demo: medical product presentation",
+      "badge": "New"
     }
   },
   "references": {
@@ -339,5 +354,10 @@
         ]
       }
     ]
+  },
+  "video": {
+    "eyebrow": "Discover BARAKODE",
+    "title": "BARAKODE on video",
+    "subtitle": "Two minutes to understand who we are, what we build and how we work."
   }
 }

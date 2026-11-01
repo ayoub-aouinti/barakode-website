@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt, FaCheck, FaMobileAlt, FaPlay, FaStar } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaCheck, FaMobileAlt, FaPlay, FaStar, FaVideo } from 'react-icons/fa';
 import './Products.css';
 
 const PHARMASYNC_DEMO_URL = 'https://pharmasync.barakode.org/';
@@ -13,6 +13,7 @@ const Products = () => {
   const groups = t('products.pharmasync.groups', { returnObjects: true }) as Group[];
   const roles = t('products.pharmasync.roles', { returnObjects: true }) as Role[];
   const badgiPoints = t('products.badgi.points', { returnObjects: true }) as string[];
+  const medvideoPoints = t('products.medvideo.points', { returnObjects: true }) as string[];
   const workflowPoints = t('products.workflow.points', { returnObjects: true }) as string[];
 
   const fadeIn = (x: number) => ({
@@ -179,6 +180,37 @@ const Products = () => {
                 <div className="browser-url"><span>Badgi-WorkFlow</span></div>
               </div>
               <img src="/projects/badgi-workflow-dash.png" alt="Badgi-WorkFlow" loading="lazy" />
+            </div>
+          </motion.div>
+        </article>
+        {/* Vidéos médicales */}
+        <article className="product product-reverse">
+          <motion.div className="product-content" {...fadeIn(50)}>
+            <div className="product-badges">
+              <span className="product-badge"><FaVideo /> {t('products.medvideo.badge')}</span>
+            </div>
+            <h3>BARAKODE Medical Video</h3>
+            <p className="product-tagline">{t('products.medvideo.tagline')}</p>
+            <p className="product-description">{t('products.medvideo.description')}</p>
+            <ul className="product-list">
+              {medvideoPoints.map((point) => (
+                <li key={point}><FaCheck />{point}</li>
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div className="product-visual" {...fadeIn(-50)}>
+            <div className="browser-frame">
+              <div className="browser-header">
+                <div className="browser-dots">
+                  <span className="dot dot-red"></span>
+                  <span className="dot dot-yellow"></span>
+                  <span className="dot dot-green"></span>
+                </div>
+                <div className="browser-url"><span>{t('products.medvideo.demoLabel')}</span></div>
+              </div>
+              <video className="product-video" controls playsInline preload="metadata" aria-label={t('products.medvideo.watch')}>
+                <source src="/videos/medical-demo.mp4#t=0.5" type="video/mp4" />
+              </video>
             </div>
           </motion.div>
         </article>

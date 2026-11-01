@@ -1,0 +1,16 @@
+.company-video-player {
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), var(--shadow-glow-accent);
+}
+
+.company-video-player video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
