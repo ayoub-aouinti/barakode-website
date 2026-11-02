@@ -5,6 +5,8 @@ import './Products.css';
 
 const PHARMASYNC_DEMO_URL = 'https://pharmasync.barakode.org/';
 
+const DEMO_CLIP_SECONDS = 4;
+
 interface Group { title: string; items: string[] }
 interface Role { title: string; text: string }
 
@@ -208,8 +210,18 @@ const Products = () => {
                 </div>
                 <div className="browser-url"><span>{t('products.medvideo.demoLabel')}</span></div>
               </div>
-              <video className="product-video" controls playsInline preload="metadata" aria-label={t('products.medvideo.watch')}>
-                <source src="/videos/medical-demo.mp4#t=0.5" type="video/mp4" />
+              <video
+                className="product-video"
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-label={t('products.medvideo.watch')}
+                onTimeUpdate={(e) => {
+                  if (e.currentTarget.currentTime >= DEMO_CLIP_SECONDS) e.currentTarget.currentTime = 0;
+                }}
+              >
+                <source src="/videos/medical-demo.mp4#t=0,4" type="video/mp4" />
               </video>
             </div>
           </motion.div>
